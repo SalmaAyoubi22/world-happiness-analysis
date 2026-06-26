@@ -9,7 +9,7 @@ and what I would do differently.*
 
 The decision to combine five years of data into one unified dataset was the
 right call. It allowed trend analysis that a single-year snapshot would never
-reveal — most importantly, Finland's rise from 5th to 1st between 2015 and
+reveal, most importantly, Finland's rise from 5th to 1st between 2015 and
 2019, which turned out to be the most compelling story in the data.
 
 Standardising inconsistent column names across five separately formatted
@@ -18,7 +18,7 @@ most valuable lesson. Real-world data is messy, and the ability to clean
 and unify it is something I now feel confident doing from scratch.
 
 The correlation heatmap was the single most informative visualisation.
-It answered the central question of the project in one chart — GDP and
+It answered the central question of the project in one chart: GDP and
 health matter most, generosity barely matters at all.
 
 ---
