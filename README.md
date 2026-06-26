@@ -11,8 +11,6 @@
 
 </div>
 
----
-
 ## The Question Behind This Project
 
 Finland is a small Nordic country of 5.5 million people. It has long winters,
@@ -30,8 +28,6 @@ nations fall behind?
 This project analyses five years of the World Happiness Report (2015–2019)
 across 158 countries, using Python to explore the factors behind happiness
 scores, and to trace the early signs of Finland's rise to the top.
-
----
 
 ## What the Data Covers
 
@@ -55,53 +51,50 @@ broken down into six contributing factors:
 This analysis covers 782 data points across 158 countries and 5 years,
 cleaned and standardised from five separately formatted annual datasets.
 
----
-
 ## Key Findings
 
-### 1 Money matters most, but it is not everything
+### ![1](https://img.shields.io/badge/1-2a9d8f?style=flat-square) Money matters most, but it is not everything
 GDP per capita is the strongest single predictor of happiness (r = 0.79).
 Wealthier countries are significantly happier on average. But the relationship
 is not perfect, several countries punch well above their economic weight,
 and some wealthy nations underperform. Wealth creates the conditions for
 happiness, but does not guarantee it.
 
-### 2 Health and social support are nearly as powerful
+### ![2](https://img.shields.io/badge/2-2a9d8f?style=flat-square) Health and social support are nearly as powerful
 Life expectancy (r = 0.74) and having a strong social network (r = 0.65)
 are close behind GDP. Countries where people live longer and feel supported
 by family and community consistently score higher, regardless of income level.
 
-### 3 Generosity is the great surprise
+### ![3](https://img.shields.io/badge/3-2a9d8f?style=flat-square) Generosity is the great surprise
 With a correlation of just r = 0.14, generosity has almost no measurable
 relationship with national happiness. Countries whose citizens donate and
 volunteer the most are not noticeably happier. This challenges the popular
 assumption that giving makes societies flourish, at least at the national level.
 
-### 4 The Nordic formula is real and consistent
+### ![4](https://img.shields.io/badge/4-2a9d8f?style=flat-square) The Nordic formula is real and consistent
 5 of the top 10 happiest countries in 2019 are Nordic nations. They do not
 just score well on one factor, they score in the top tier across GDP, health,
 social support, freedom and low corruption simultaneously. It is the
 combination, not any single element, that sets them apart.
 
-### 5 The gap between top and bottom is enormous
+### ![5](https://img.shields.io/badge/5-2a9d8f?style=flat-square) The gap between top and bottom is enormous
 Finland scores 7.77. South Sudan scores 2.85. That 5-point gap represents
-the difference between a society built on stability, trust and welfare systems, and one defined by conflict, poverty and institutional collapse.
+the difference between a society built on stability, trust and welfare systems,
+and one defined by conflict, poverty and institutional collapse.
 
-### 6 The Latin American Happiness Paradox
-Latin America scores significantly higher than its GDP would predict 
+### ![6](https://img.shields.io/badge/6-2a9d8f?style=flat-square) The Latin American Happiness Paradox
+Latin America scores significantly higher than its GDP would predict,
 ranking 4th regionally despite lower average incomes than Eastern Asia.
 Strong social support and freedom scores drive this. People report feeling
 deeply connected to family and community, which partially compensates for
 lower economic wealth.
 
-### 7 Global happiness is stable, with one notable dip
+### ![7](https://img.shields.io/badge/7-2a9d8f?style=flat-square) Global happiness is stable, with one notable dip
 The worldwide average barely moved between 2015 and 2019 (range: 5.36–5.41).
 The one exception was a dip in 2017, a year marked by significant global
 political turbulence, before recovering to its highest point in 2019.
 
----
-
-## Finland -The Full Picture
+## Finland — The Full Picture
 
 <div align="center">
 
@@ -139,8 +132,6 @@ while other wealthy nations fell short on trust, freedom or social cohesion.
 > people in the world."
 > — Frank Martela, Finnish philosopher and psychology researcher
 
----
-
 ## Visualisations
 
 <div align="center">
@@ -157,16 +148,12 @@ while other wealthy nations fell short on trust, freedom or social cohesion.
 
 </div>
 
----
-
 ## Technical Summary
 
 - **Language:** Python 3.11
 - **Libraries:** pandas, matplotlib, seaborn
 - **Key techniques:** data wrangling across inconsistently formatted datasets, EDA, Pearson correlation analysis, multi-year trend analysis, regression visualisation, groupby aggregation
 - **Data points:** 782 rows across 5 years and 158 countries
-
----
 
 ## References & Data
 
@@ -175,18 +162,14 @@ while other wealthy nations fell short on trust, freedom or social cohesion.
 | World Happiness Report Dataset | [Kaggle — Download here](https://www.kaggle.com/datasets/unsdsn/world-happiness) |
 | Official World Happiness Report | [worldhappiness.report](https://worldhappiness.report) |
 | Finland 9-year streak — 2024 Report | [World Happiness Report 2024](https://worldhappiness.report/news/world-happiness-report-2024-most-comprehensive-picture-yet-of-happiness-across-generations/) |
-
-
----
+| Frank Martela quote | [CNBC Make It, March 2024](https://www.cnbc.com/2024/03/20/happiest-countries-world-happiness-report-2024.html) |
 
 ## Project Reflection
 
 For a critical look at this project's limitations and what I would improve
 with more time and data, see [REFLECTIONS.md](REFLECTIONS.md)
 
----
-
 ## Author
 
-**Salma Ayoubi**
+**Salma Ayoubi**  
 [GitHub Profile](https://github.com/SalmaAyoubi22)
