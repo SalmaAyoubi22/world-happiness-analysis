@@ -156,4 +156,109 @@ sns.heatmap(corr, annot=True, cmap='YlGnBu', fmt='.2f', linewidths=0.5)
 plt.title('Correlation Between Happiness Factors', fontsize=16)
 plt.tight_layout()
 plt.savefig('Visuals/correlation_heatmap.png')
-p
+lt.show()
+print("Chart 3 saved!")
+
+# ============================================
+# STEP 8: AVERAGE HAPPINESS BY YEAR (TREND)
+# ============================================
+
+yearly_avg = df_all.groupby('Year')['Score'].mean()
+
+plt.figure(figsize=(10, 6))
+plt.plot(yearly_avg.index, yearly_avg.values, marker='o',
+         color='#2a9d8f', linewidth=2.5, markersize=8)
+plt.title('Average Global Happiness Score 2015-2019', fontsize=16)
+plt.xlabel('Year')
+plt.ylabel('Average Happiness Score')
+plt.xticks([2015, 2016, 2017, 2018, 2019])
+plt.ylim(5.0, 5.6)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig('Visuals/happiness_trend_2015_2019.png')
+plt.show()
+print("Chart 4 saved!")
+
+# ============================================
+# STEP 9: AVERAGE HAPPINESS BY REGION
+# ============================================
+
+df_2015_original = pd.read_csv("data/2015.csv")
+region_avg = df_2015_original.groupby('Region')['Happiness Score'].mean().sort_values(ascending=True)
+
+plt.figure(figsize=(12, 8))
+bars = plt.barh(region_avg.index, region_avg.values, color='#2a9d8f')
+
+for bar, value in zip(bars, region_avg.values):
+    plt.text(value + 0.05, bar.get_y() + bar.get_height()/2,
+             f'{value:.2f}', va='center', fontsize=10)
+
+plt.title('Average Happiness Score by Region (2015)', fontsize=16)
+plt.xlabel('Average Happiness Score')
+plt.ylabel('Region')
+plt.xlim(0, 8)
+plt.tight_layout()
+plt.savefig('Visuals/happiness_by_region.png')
+plt.show()
+print("Chart 5 saved!")
+
+# ============================================
+# STEP 10: GDP vs HAPPINESS SCATTER PLOT
+# ============================================
+
+plt.figure(figsize=(10, 7))
+sns.scatterplot(data=df_all, x='GDP', y='Score', alpha=0.5, color='#2a9d8f')
+sns.regplot(data=df_all, x='GDP', y='Score',
+            scatter=False, color='#1a5c5c', line_kws={'linewidth': 2})
+plt.title('GDP per Capita vs Happiness Score (2015-2019)', fontsize=16)
+plt.xlabel('GDP per Capita')
+plt.ylabel('Happiness Score')
+plt.tight_layout()
+plt.savefig('Visuals/gdp_vs_happiness.png')
+plt.show()
+print("Chart 6 saved!")
+
+# ============================================
+# STEP 11: NORDIC COUNTRIES TREND
+# ============================================
+
+countries = ['Finland', 'Denmark', 'Norway', 'Iceland', 'Switzerland']
+colors = ['#2a9d8f', '#264653', '#4a9e8f', '#1a5c5c', '#80b3ac']
+
+plt.figure(figsize=(12, 7))
+
+for country, color in zip(countries, colors):
+    country_data = df_all[df_all['Country'] == country]
+    plt.plot(country_data['Year'], country_data['Score'],
+             marker='o', linewidth=2, label=country, color=color)
+
+plt.title('Happiness Score Trends - Top Nordic Countries (2015-2019)', fontsize=16)
+plt.xlabel('Year')
+plt.ylabel('Happiness Score')
+plt.xticks([2015, 2016, 2017, 2018, 2019])
+plt.legend()
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig('Visuals/nordic_trends.png')
+plt.show()
+print("Chart 7 saved!")
+
+# ============================================
+# STEP 12: FINLAND CONTEXT NOTE
+# ============================================
+
+print("""
+==============================================
+KEY INSIGHT: FINLAND'S ONGOING DOMINANCE
+==============================================
+Our dataset shows Finland rising from 5th to 1st
+between 2015 and 2019. This was just the beginning.
+
+Finland has ranked #1 every year from 2018 to 2026, nine consecutive years as of the latest report.
+
+The factors our analysis identifies as strongest
+predictors of happiness (GDP: 0.79, Health: 0.74,
+Social Support: 0.65) are exactly the areas where
+Finland consistently outperforms other nations.
+==============================================
+""")
