@@ -1,4 +1,4 @@
-# Project Reflections — World Happiness Analysis
+# Project Reflections: World Happiness Analysis
 
 *A critical look at what this analysis does well, where it falls short,
 and what I would do differently.*
