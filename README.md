@@ -94,7 +94,7 @@ The worldwide average barely moved between 2015 and 2019 (range: 5.36–5.41).
 The one exception was a dip in 2017, a year marked by significant global
 political turbulence, before recovering to its highest point in 2019.
 
-## Finland — The Full Picture
+## Finland: The Full Picture
 
 <div align="center">
 
