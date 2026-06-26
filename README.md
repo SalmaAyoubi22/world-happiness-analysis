@@ -1,5 +1,5 @@
 # World Happiness Analysis (2015–2019)
-### *What makes a country happy — and why has Finland been #1 for 9 years straight?*
+### *What makes a country happy, and why has Finland been #1 for 9 years straight?*
 
 <div align="center">
 
