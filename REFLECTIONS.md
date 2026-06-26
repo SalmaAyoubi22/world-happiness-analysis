@@ -30,7 +30,7 @@ There is a 7-year gap between where this dataset ends and today. Given
 that Finland has continued to rank 1st every year from 2018 to 2026,
 extending the analysis to include 2020–2024 would paint a much more
 complete picture. It would also capture the impact of the COVID-19
-pandemic on global happiness — a dimension that would be fascinating
+pandemic on global happiness, a dimension that would be fascinating
 to analyse.
 
 **The Region column was only available in 2015 and 2016.**
