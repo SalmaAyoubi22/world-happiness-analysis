@@ -29,7 +29,7 @@ health matter most, generosity barely matters at all.
 There is a 7-year gap between where this dataset ends and today. Given
 that Finland has continued to rank 1st every year from 2018 to 2026,
 extending the analysis to include 2020–2024 would paint a much more
-complete picture. It would also capture the impact of the COVID-19
+complete picture. It would also capture the impact of COVID-19
 pandemic on global happiness, a dimension that would be fascinating
 to analyse.
 
@@ -47,7 +47,7 @@ much each factor independently contributes to the happiness score,
 controlling for the others.
 
 **The happiness score is self-reported.**
-The score is based entirely on how people rate their own lives — not
+The score is based entirely on how people rate their own lives, not
 on objective quality of life metrics. Two countries with identical GDP
 and healthcare could score differently based purely on cultural
 attitudes toward expressing satisfaction or dissatisfaction. This is
@@ -61,28 +61,28 @@ any finding.
 
 **Extend the dataset to 2024.**
 The most obvious improvement. Five years of data tells a partial story.
-Nine years would tell a complete one — and would make the Finland
+Nine years would tell a complete one, and would make the Finland
 narrative far more powerful with actual data rather than external
 references.
 
 **Build a regression model.**
-A multiple linear regression would allow me to quantify how much each
+A multiple linear regression would allow me to quantify how much each 
 factor independently predicts happiness, controlling for all the others.
-Right now I can say GDP correlates most strongly — but I cannot say
+Right now, I can say GDP correlates most strongly, but I cannot say
 by how much it matters relative to health or social support when
-both are considered together.
+Both are considered together.
 
 **Investigate the outliers.**
 The countries that sit furthest from the regression line are often where
 the most interesting stories live. Why does Costa Rica score so high
-despite modest GDP? Why do Gulf states like Qatar underperform relative
+despite a modest GDP? Why do Gulf states like Qatar underperform relative
 to their enormous wealth? Digging into those specific cases would add
 real depth to the analysis.
 
 **Build an interactive dashboard.**
 A static chart can only show one angle at a time. An interactive Tableau
-or Power BI dashboard would let someone explore the data themselves —
-filtering by region, year or factor — which would make the findings
+A Power BI dashboard would let someone explore the data themselves,
+filtering by region, year, or factor, which would make the findings
 far more accessible and engaging.
 
 **Add statistical significance testing.**
@@ -94,14 +94,14 @@ make the analysis more rigorous and credible.
 
 ## What This Project Taught Me
 
-Beyond the technical skills — pandas, matplotlib, seaborn, data wrangling
-across inconsistently formatted datasets — this project taught me to think
-about data as a story with a beginning, a narrative and open questions at
+Beyond the technical skills: pandas, matplotlib, seaborn, data wrangling
+across inconsistently formatted datasets. This project taught me to think
+about data as a story with a beginning, a narrative, and open questions at
 the end.
 
 The Finland finding was not something I set out to investigate. It emerged
-from the data, and following that thread — connecting it to nine years of
-real-world reports beyond the dataset — is what turned a standard EDA
+from the data, and following that thread, connecting it to nine years of
+real-world reports beyond the dataset, is what turned a standard EDA
 exercise into something I can speak about with genuine enthusiasm.
 
 That, I think, is what data analysis is actually about.
