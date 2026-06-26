@@ -178,7 +178,6 @@ As Finnish philosopher Frank Martela put it:
 
 ---
 
-## Author
 
-**Salma Ayoubi** — Data Analyst  
+**Salma Ayoubi** 
 [GitHub Profile](https://github.com/SalmaAyoubi22)
